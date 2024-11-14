@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    color: darkorange;
+}
+#p1{
+    text-align: end;
+}
+#p2{
+    color: green;
+    font-weight: bold;
+}
+div{
+    border: 2px solid black;
+}
+div p{
+    margin: 0;
+    margin-left: 50px;
+    font-weight: bold;
+}
+#linkText{
+    text-decoration: underline;
+}

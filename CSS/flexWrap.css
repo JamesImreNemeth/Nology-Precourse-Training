@@ -1,0 +1,53 @@
+/*Flew Wrap Challenge*/
+
+.container{
+    width: 900px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50;
+}
+.block{
+    width: 20%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.spacing{
+    margin: 100px 0px;
+}
+.spacing:last-child{
+    justify-content: space-between;
+}
+#one{
+    background-color: lightblue;
+}
+#two{
+    background-color: orange;
+}
+#three{
+    background-color: hotpink;
+}
+.end{
+    margin-left: auto;
+}
+
+.containerOne{
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.containerTwo{
+    width: 900px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}

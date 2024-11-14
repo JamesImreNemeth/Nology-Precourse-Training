@@ -1,0 +1,23 @@
+.container{
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block{
+    width: 20%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#one{
+    background-color: lightblue;
+}
+#two{
+    background-color: orange;
+}
+#three{
+    background-color: hotpink;
+}

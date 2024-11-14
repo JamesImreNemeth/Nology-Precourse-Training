@@ -1,0 +1,26 @@
+.containerOne{
+    border: 2px solid orange;
+}
+.containerTwo{
+    border: 2px solid orange;
+}
+.section{
+    background-color: hotpink;
+}
+h1{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+p{
+    padding-left: 60px;
+}
+div{
+    background-color: lightgreen;
+}
+#contentOne{
+    padding-bottom: 30px;
+}
+#contentTwo{
+    padding-bottom: 30px;
+}
+
