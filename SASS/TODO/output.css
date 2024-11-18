@@ -36,7 +36,7 @@ main {
 }
 main article {
   background-color: white;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 16px 0.2px;
   border-radius: 15px;
   padding: 1rem;
   flex: 1;
@@ -151,6 +151,27 @@ main .complete .task .title {
 main .complete .task .date {
   font-size: 0.9rem;
   color: gray;
+}
+
+@media screen and (min-width: 577px) {
+  body {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 769px) {
+  body {
+    background-color: purple;
+  }
+}
+@media screen and (min-width: 1025px) {
+  body {
+    background-color: yellowgreen;
+  }
+}
+@media screen and (min-width: 1081px) {
+  body {
+    background-color: blue;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgray;
+  height: 8vh;
+}
+
+main {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.flag-container {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.flag {
+  width: 100%;
+  height: 10vh;
+  padding: 40px 300px;
+  background-color: black;
+}
+
+@media screen and (min-width: 600px) {
+  .flag-color-one {
+    background-color: black;
+  }
+  .flag-color-two {
+    background-color: red;
+  }
+  .flag-color-three {
+    background-color: yellow;
+  }
+}
+@media screen and (min-width: 900px) {
+  .flag-color-one {
+    background-color: black;
+  }
+  .flag-color-two {
+    background-color: yellow;
+  }
+  .flag-color-three {
+    background-color: red;
+  }
+  .flag-container {
+    flex-direction: row;
+  }
+  .flag {
+    padding: 100px 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flag-color-one {
+    background-color: green;
+  }
+  .flag-color-two {
+    background-color: white;
+  }
+  .flag-color-three {
+    background-color: orange;
+  }
+  .flag-container {
+    flex-direction: row;
+  }
+  .flag {
+    padding: 100px 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

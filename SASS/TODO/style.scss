@@ -1,4 +1,5 @@
 @use './mixins' as m;
+@use './media-queries.scss' as q;
 
 * {
     box-sizing: border-box;
@@ -16,7 +17,6 @@ body {
 header {
     @include m.flex-center();
     height: 10vh;
-
     h1 {
         font-size: 2rem;
         font-weight: bold;
@@ -24,7 +24,6 @@ header {
         color: rgb(55, 55, 131);
     }
 }
-
 main {
     @include m.flex-center(row, space-between, flex-start);
     flex-wrap: nowrap;
@@ -32,13 +31,12 @@ main {
     gap: 2rem;
 
     article {
-        @include m.box-style(white, rgba(0, 0, 0, 0.2));
+        @include m.box-style(white);
         flex: 1;
         max-width: 30%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-
         .task {
             @include m.task-style(rgba(0, 0, 0, 0.05)); 
         }
@@ -46,7 +44,6 @@ main {
 
     .overdue {
         @include m.section-heading(rgb(202, 75, 75));
-
         .task {
             @include m.task-style(rgba(202, 75, 75, 0.274));
         }
@@ -54,7 +51,6 @@ main {
 
     .pending {
         @include m.section-heading(rgb(75, 134, 202));
-
         .task {
             @include m.task-style(rgba(75, 134, 202, 0.274));
         }
@@ -62,9 +58,34 @@ main {
 
     .complete {
         @include m.section-heading(rgb(75, 202, 132));
-
         .task {
             @include m.task-style(rgba(75, 202, 132, 0.274));
         }
     }
 }
+
+@include q.tablet{
+    body {
+        background-color: red;
+    }
+}
+
+@include q.large-tablet{
+    body {
+        background-color: purple;
+    }
+}
+
+@include q.laptop{
+    body {
+        background-color: yellowgreen;
+    }
+}
+
+@include q.desktop{
+    body {
+        background-color: blue;
+    }
+}
+
+
