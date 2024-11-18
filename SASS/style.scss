@@ -1,0 +1,70 @@
+@use './mixins' as m;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(169, 216, 247);
+}
+
+header {
+    @include m.flex-center();
+    height: 10vh;
+
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(55, 55, 131);
+    }
+}
+
+main {
+    @include m.flex-center(row, space-between, flex-start);
+    flex-wrap: nowrap;
+    padding: 2rem;
+    gap: 2rem;
+
+    article {
+        @include m.box-style(white, rgba(0, 0, 0, 0.2));
+        flex: 1;
+        max-width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .task {
+            @include m.task-style(rgba(0, 0, 0, 0.05)); 
+        }
+    }
+
+    .overdue {
+        @include m.section-heading(rgb(202, 75, 75));
+
+        .task {
+            @include m.task-style(rgba(202, 75, 75, 0.274));
+        }
+    }
+
+    .pending {
+        @include m.section-heading(rgb(75, 134, 202));
+
+        .task {
+            @include m.task-style(rgba(75, 134, 202, 0.274));
+        }
+    }
+
+    .complete {
+        @include m.section-heading(rgb(75, 202, 132));
+
+        .task {
+            @include m.task-style(rgba(75, 202, 132, 0.274));
+        }
+    }
+}

@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(169, 216, 247);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(55, 55, 131);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+main article {
+  background-color: white;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 1rem;
+  flex: 1;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+main article .task {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+main article .task img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  background-color: white;
+  border-radius: 50%;
+}
+main article .task .title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+main article .task .date {
+  font-size: 0.9rem;
+  color: gray;
+}
+main .overdue h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: rgb(202, 75, 75);
+}
+main .overdue .task {
+  background-color: rgba(202, 75, 75, 0.274);
+  padding: 1rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+main .overdue .task img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  background-color: white;
+  border-radius: 50%;
+}
+main .overdue .task .title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+main .overdue .task .date {
+  font-size: 0.9rem;
+  color: gray;
+}
+main .pending h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: rgb(75, 134, 202);
+}
+main .pending .task {
+  background-color: rgba(75, 134, 202, 0.274);
+  padding: 1rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+main .pending .task img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  background-color: white;
+  border-radius: 50%;
+}
+main .pending .task .title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+main .pending .task .date {
+  font-size: 0.9rem;
+  color: gray;
+}
+main .complete h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: rgb(75, 202, 132);
+}
+main .complete .task {
+  background-color: rgba(75, 202, 132, 0.274);
+  padding: 1rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+main .complete .task img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  background-color: white;
+  border-radius: 50%;
+}
+main .complete .task .title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+main .complete .task .date {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+/*# sourceMappingURL=output.css.map */
